@@ -17,7 +17,23 @@ class singleNode {
     this.value = value;
     this.next = next;
   }
+
+  add(otherNode) {
+    this.next = otherNode;
+    return 1;
+  }
 }
+
+let one = new singleNode('1');
+let two = new singleNode('2');
+let three = new singleNode('3');
+let four = new singleNode('4');
+let five = new singleNode('5');
+let six = new singleNode('6');
+let seven = new singleNode('7');
+let eight = new singleNode('8');
+let nine = new singleNode('9');
+let ten = new singleNode('10');
 
 $(document).ready(function() {
   $('#output-section-1').text(1);
