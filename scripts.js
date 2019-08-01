@@ -12,7 +12,12 @@ In this example, assume nodes with the same value are the exact same node object
 Do this in O(M + N) time (where M and N are the lengths of the lists) and constant space.
 */
 
-
+class singleNode {
+  constructor(value, next=null) {
+    this.value = value;
+    this.next = next;
+  }
+}
 
 $(document).ready(function() {
   $('#output-section-1').text(1);
