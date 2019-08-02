@@ -19,12 +19,23 @@ class singleNode {
   }
 }
 
-const displayLL = (headNode) => {
-  currentNode = headNode.value;
-  while (headNode.next != null) {
-    console.log('Node value =', headNode.value)
-    currentNode = headNode.next;
+const findIntersectNode = (head1, head2) => {
+  let answer = null;
+  while (head1.value != null) {
+    if (head1.next === null) {break}
+    temp = head2;
+    while (temp.value != null) {
+      if (head1.value === temp.value) {
+        answer = head1.value;
+        break;
+      } else {
+        if (temp.next === null) {break}
+        temp = temp.next;
+      }
+    }
+    head1 = head1.next;
   }
+  return answer;
 }
 
 let node10 = new singleNode('10', null);
@@ -45,8 +56,8 @@ let nodeB = new singleNode('B', node99);
 console.log('A =', nodeA);
 console.log('B =', nodeB);
 
-
 $(document).ready(function() {
-  $('#output-section-1').text(1);
-  $('#output-section-2').text(2);
+  $('#output-section-1').text(JSON.stringify(nodeA));
+  $('#output-section-2').text(JSON.stringify(nodeB));
+  $('#output-section-3').text(JSON.stringify(findIntersectNode(nodeA, nodeB)));
 });
