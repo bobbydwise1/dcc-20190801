@@ -17,10 +17,17 @@ class singleNode {
     this.value = value;
     this.next = next;
   }
+}
 
-  add(otherNode) {
-    this.next = otherNode;
-    return 1;
+class node {
+  constructor(name) {
+    this.name = name;
+  }
+
+  addList(arrayOfSingleNodes) {
+    for (i=0; i<arrayOfSingleNodes.length; i++) {
+      arrayOfSingleNodes[i].next = 
+    }
   }
 }
 
@@ -34,6 +41,12 @@ let seven = new singleNode('7');
 let eight = new singleNode('8');
 let nine = new singleNode('9');
 let ten = new singleNode('10');
+let nidynine = new singleNode('99');
+
+let alist = [three,seven,eight,ten];
+let blist = [nidynine,one,eight,ten];
+
+
 
 $(document).ready(function() {
   $('#output-section-1').text(1);
