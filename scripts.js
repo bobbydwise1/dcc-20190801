@@ -19,20 +19,28 @@ class singleNode {
   }
 }
 
-let node1 = new singleNode('1', '8');
+const displayLL = (headNode) => {
+  currentNode = headNode.value;
+  while (headNode.next != null) {
+    console.log('Node value =', headNode.value)
+    currentNode = headNode.next;
+  }
+}
+
+let node10 = new singleNode('10', null);
+let node8 = new singleNode('8', node10);
+let node7 = new singleNode('7', node8);
+let node1 = new singleNode('1', node8);
 let node2 = new singleNode('2', null);
-let node3 = new singleNode('3', '7');
+let node3 = new singleNode('3', node7);
 let node4 = new singleNode('4', null);
 let node5 = new singleNode('5', null);
 let node6 = new singleNode('6', null);
-let node7 = new singleNode('7', '8');
-let node8 = new singleNode('8', '10');
 let node9 = new singleNode('9', null);
-let node10 = new singleNode('10', null);
-let node99 = new singleNode('99', '1');
+let node99 = new singleNode('99', node1);
 
-let nodeA = new singleNode('A', '3');
-let nodeB = new singleNode('B', '99');
+let nodeA = new singleNode('A', node3);
+let nodeB = new singleNode('B', node99);
 
 console.log('A =', nodeA);
 console.log('B =', nodeB);
