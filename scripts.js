@@ -19,18 +19,6 @@ class singleNode {
   }
 }
 
-class node {
-  constructor(name) {
-    this.name = name;
-  }
-
-  addList(arrayOfSingleNodes) {
-    for (i=0; i<arrayOfSingleNodes.length; i++) {
-      arrayOfSingleNodes[i].next = 
-    }
-  }
-}
-
 let one = new singleNode('1');
 let two = new singleNode('2');
 let three = new singleNode('3');
@@ -43,9 +31,12 @@ let nine = new singleNode('9');
 let ten = new singleNode('10');
 let nidynine = new singleNode('99');
 
-let alist = [three,seven,eight,ten];
-let blist = [nidynine,one,eight,ten];
 
+let A = new singleNode('A');
+let B = new singleNode('B');
+
+console.log('A =', A);
+console.log('B =', B);
 
 
 $(document).ready(function() {
