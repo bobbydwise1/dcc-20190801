@@ -19,21 +19,20 @@ class singleNode {
   }
 }
 
-let one = new singleNode('1');
-let two = new singleNode('2');
-let three = new singleNode('3');
-let four = new singleNode('4');
-let five = new singleNode('5');
-let six = new singleNode('6');
-let seven = new singleNode('7');
-let eight = new singleNode('8');
-let nine = new singleNode('9');
-let ten = new singleNode('10');
-let nidynine = new singleNode('99');
+let one = new singleNode(1, 8);
+let two = new singleNode(2, null);
+let three = new singleNode(3, 7);
+let four = new singleNode(4, null);
+let five = new singleNode(5, null);
+let six = new singleNode(6, null);
+let seven = new singleNode(7, 8);
+let eight = new singleNode(8, 10);
+let nine = new singleNode(9, null);
+let ten = new singleNode(10, null);
+let nidynine = new singleNode(99, 1);
 
-
-let A = new singleNode('A');
-let B = new singleNode('B');
+let A = new singleNode('A', 3);
+let B = new singleNode('B', 99);
 
 console.log('A =', A);
 console.log('B =', B);
