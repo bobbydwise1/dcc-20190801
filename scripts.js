@@ -19,23 +19,23 @@ class singleNode {
   }
 }
 
-let one = new singleNode('1', '8');
-let two = new singleNode('2', null);
-let three = new singleNode('3', '7');
-let four = new singleNode('4', null);
-let five = new singleNode('5', null);
-let six = new singleNode('6', null);
-let seven = new singleNode('7', '8');
-let eight = new singleNode('8', '10');
-let nine = new singleNode('9', null);
-let ten = new singleNode('10', null);
-let nidynine = new singleNode('99', '1');
+let node1 = new singleNode('1', '8');
+let node2 = new singleNode('2', null);
+let node3 = new singleNode('3', '7');
+let node4 = new singleNode('4', null);
+let node5 = new singleNode('5', null);
+let node6 = new singleNode('6', null);
+let node7 = new singleNode('7', '8');
+let node8 = new singleNode('8', '10');
+let node9 = new singleNode('9', null);
+let node10 = new singleNode('10', null);
+let node99 = new singleNode('99', '1');
 
-let A = new singleNode('A', '3');
-let B = new singleNode('B', '99');
+let nodeA = new singleNode('A', '3');
+let nodeB = new singleNode('B', '99');
 
-console.log('A =', A);
-console.log('B =', B);
+console.log('A =', nodeA);
+console.log('B =', nodeB);
 
 
 $(document).ready(function() {
